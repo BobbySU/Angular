@@ -3,13 +3,29 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  styleUrls: ['./list.component.scss'],
 })
-export class ListComponent implements OnInit {
+export class ListComponent {
+  users = [
+    {
+      firstName: 'Bobby',
+      lastName: 'Ivan',
+    },
+    {
+      firstName: 'Anna',
+      lastName: 'Ivan',
+    },
+    {
+      firstName: 'Don',
+      lastName: 'Ivan',
+    },
+  ];
 
-  constructor() { }
+  showLastName = false;
 
-  ngOnInit(): void {
+  handleClickEvent(event: MouseEvent) {
+    this.showLastName = !this.showLastName;
   }
 
+  constructor() {}
 }
