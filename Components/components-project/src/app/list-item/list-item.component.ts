@@ -10,5 +10,10 @@ export class ListItemComponent {
   @Input() user!: { firstName: String; lastName: String };
   @Input() showLastName!: boolean;
 
+
+  selectClickHandler() {
+
+  }
+
   constructor() {}
 }
