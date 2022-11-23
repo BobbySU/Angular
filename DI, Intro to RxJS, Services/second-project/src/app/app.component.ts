@@ -13,6 +13,6 @@ export class AppComponent {
   constructor() {
     setInterval(() => {
       this.count++;
-    }, 3000);
+    }, 1000);
   }
 }
