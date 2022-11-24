@@ -10,7 +10,7 @@ export class RecentPostsComponent implements OnInit {
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.apiService.loadThemes().subscribe((value) => {
+    this.apiService.loadPosts(5).subscribe((value) => {
       console.log(value);
     });
   }
