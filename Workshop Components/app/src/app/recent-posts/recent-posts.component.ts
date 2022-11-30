@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { IPost } from '../interfaces/post';
 
 @Component({
   selector: 'app-recent-posts',
@@ -7,11 +8,21 @@ import { ApiService } from '../api.service';
   styleUrls: ['./recent-posts.component.scss'],
 })
 export class RecentPostsComponent implements OnInit {
+
+  postList: IPost[] | null = null;
+  errorFetcingData = false;
+
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.apiService.loadPosts(5).subscribe((value) => {
-      console.log(value);
+    this.apiService.loadPosts(5).subscribe({
+      next: (value) => {
+        this.postList = value;
+      },
+      error: (err) => {
+        this.errorFetcingData = true;
+        console.error(err);
+      }
     });
   }
 }
