@@ -1,6 +1,7 @@
 <aside>
   <div class="aside">
     <h2 class="title">Recent posts</h2>
+    <div *ngIf="errorFetcingData">Erorr Loading Posts</div>
     <app-loader *ngIf="!postList"></app-loader>
     <div>
       <div *ngFor="let post of postList" class="aside-theme">
