@@ -1,6 +1,7 @@
 <aside>
   <div class="aside">
     <h2 class="title">Recent posts</h2>
+    <app-loader *ngIf="!postList"></app-loader>
     <div>
       <div *ngFor="let post of postList" class="aside-theme">
         <a href="#">
