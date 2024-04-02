@@ -1,3 +1,4 @@
+<div *ngIf="errorFetcingData">Erorr Loading Themes</div>
 <app-loader *ngIf="!themeList"></app-loader>
         <!-- theme component  -->
         <div *ngFor="let theme of themeList" class="theme-container">
