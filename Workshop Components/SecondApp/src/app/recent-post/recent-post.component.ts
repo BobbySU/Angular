@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 import { IPost } from '../interfaces/post';
 import {CommonModule} from '@angular/common';
+import { LoaderComponent } from "../shared/loader/loader.component";
 
 @Component({
-  selector: 'app-recent-post',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './recent-post.component.html',
-  styleUrl: './recent-post.component.scss'
+    selector: 'app-recent-post',
+    standalone: true,
+    templateUrl: './recent-post.component.html',
+    styleUrl: './recent-post.component.scss',
+    imports: [CommonModule, LoaderComponent]
 })
 export class RecentPostComponent {
 
