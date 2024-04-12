@@ -1,0 +1,36 @@
+.wine-pairing {
+    margin-top: 40px;
+}
+
+.wine-pairing h2 {
+    color: #8C001A; 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wine-pairing h3 {
+    color: #5A2E7F; 
+    font-size: 20px;
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+
+.wine-pairing p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .wine-pairing h2 {
+        font-size: 20px; 
+    }
+
+    .wine-pairing h3 {
+        font-size: 18px; 
+    }
+
+    .wine-pairing p {
+        font-size: 14px; 
+    }
+}

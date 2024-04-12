@@ -1,8 +1,9 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 header {
@@ -18,6 +19,7 @@ main {
 
 section {
     margin-bottom: 40px;
+    width: 67%;
 }
 
 h1 {
@@ -27,7 +29,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    color: #8C001A;
+    color: #18de18;
 }
 
 p {
@@ -42,7 +44,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 28px;
@@ -56,3 +58,32 @@ footer {
         font-size: 14px;
     }
 }
+
+.wine-image {
+    width: 20%;
+    height: auto;
+    display: block; 
+    margin: auto;
+    animation: fade-in 1s ease-out;
+    float: left; 
+    margin-right: 20px; 
+}
+
+body {
+    background-image: url('https://wallpapercave.com/wp/KYZDnfc.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+}
+
+// .content {
+//     background-color: rgba(255, 255, 255, 0.8);
+//     padding: 20px;
+//     border-radius: 10px;
+// }

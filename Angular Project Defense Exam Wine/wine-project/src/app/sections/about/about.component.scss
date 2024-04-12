@@ -1,0 +1,44 @@
+.wine-bulgaria {
+    margin-top: 40px; 
+}
+
+.wine-bulgaria h2 {
+    color: #8C001A;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.wine-bulgaria h3 {
+    color: #5A2E7F; 
+    font-size: 20px;
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+
+.wine-bulgaria p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wine-bulgaria ul {
+    margin-top: 10px;
+}
+
+.wine-bulgaria ul li {
+    margin-bottom: 10px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .wine-bulgaria h2 {
+        font-size: 20px; 
+    }
+
+    .wine-bulgaria h3 {
+        font-size: 18px; 
+    }
+
+    .wine-bulgaria p {
+        font-size: 14px;
+    }
+}

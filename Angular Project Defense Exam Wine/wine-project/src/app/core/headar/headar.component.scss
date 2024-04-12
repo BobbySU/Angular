@@ -1,39 +1,3 @@
-/* Header and navigation styles */
-header {
-    background-color: #352e3a; /* Deep purple color */
-    color: #fff; /* Text color */
-    padding: 20px 0;
-}
-
-.navbar {
-    background-color: #2b2231; /* Match header background color */
-}
-
-.nav-link {
-    color: hsl(60, 14%, 99%); /* Gold text color */
-    font-size: 18px; /* Larger font size */
-    margin-right: 20px; /* Add spacing between links */
-}
-
-.nav-link:hover {
-    color: #fff; /* Change color on hover to white */
-}
-
-.navbar-toggler {
-    color: #fff; /* Toggle button color */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column; /* Stack navigation links vertically */
-    }
-
-    .nav-link {
-        margin: 10px 0; /* Adjust spacing */
-    }
-}
-
 header {
     background: rgb(0, 128, 182);
     background: linear-gradient(0deg, rgba(0, 128, 182, 1) 0%, rgba(0, 128, 182, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -96,7 +60,7 @@ nav {
     margin: auto;
 }
 
-/* mini-navbar */
+
 
 .mini-navbar ul {
     background-color: #6ba1b8;
