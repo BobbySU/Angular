@@ -4,15 +4,15 @@
             <p class="logo"><span class="logo">World of Wine</span></p>
         </div>
         <div class="mini-navbar">
-            <ul>
+            <ul *ngIf="isLog">
                 <li>
-                    <a href="/auth/profile">'s profile</a>
+                    <a href="/auth/profile">{{user?.username}}'s profile</a>
                 </li>
                 <li>
                     <a href="/auth/logout">Logout</a>
                 </li>
             </ul>
-            <ul>
+            <ul *ngIf="!isLog">
                 <li>
                     <a href="/auth/login">Login</a>
                 </li>
