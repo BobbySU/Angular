@@ -1,8 +1,14 @@
 footer {
-    background-color: #333;  
+    background: #8C001A;
+    background: linear-gradient(0deg, #8C001A 0%,#c00023 35%, #e8012b 100%);
     color: #fff; 
     padding: 20px 0; 
     text-align: center;
+    border-top: 1px solid #00080b;
+  
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {

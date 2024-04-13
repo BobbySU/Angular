@@ -4,10 +4,17 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    background-image: url('https://wallpapercave.com/wp/KYZDnfc.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
 }
 
 header {
-    background-color: #8C001A;
+    background: #8C001A;
+    background: linear-gradient(0deg, #8C001A 0%,#c00023 35%, #e8012b 100%);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -29,7 +36,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    color: #18de18;
+    color: #d98510;
 }
 
 p {
@@ -69,21 +76,4 @@ footer {
     margin-right: 20px; 
 }
 
-body {
-    background-image: url('https://wallpapercave.com/wp/KYZDnfc.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100%;
 
-    display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
-}
-
-// .content {
-//     background-color: rgba(255, 255, 255, 0.8);
-//     padding: 20px;
-//     border-radius: 10px;
-// }

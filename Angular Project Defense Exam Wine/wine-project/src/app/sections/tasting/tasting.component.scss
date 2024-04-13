@@ -1,16 +1,17 @@
 
 .wine-tasting-bulgaria {
     margin-top: 40px; 
+    margin-left: 20px; 
 }
 
 .wine-tasting-bulgaria h2 {
-    color: #8C001A; 
+    color: #d98510; 
     font-size: 24px;
     margin-bottom: 20px; 
 }
 
 .wine-tasting-bulgaria h3 {
-    color: #5A2E7F;
+    color: #d98510;
     font-size: 20px;
     margin-top: 20px; 
     margin-bottom: 10px; 
@@ -19,6 +20,7 @@
 .wine-tasting-bulgaria p {
     font-size: 16px;
     line-height: 1.5;
+    width: 60%;
 }
 
 
@@ -34,4 +36,16 @@
     .wine-tasting-bulgaria p {
         font-size: 14px; 
     }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('https://wallpapercave.com/wp/KYZDnfc.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
 }

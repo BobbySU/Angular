@@ -1,6 +1,14 @@
 form.login, form.register {
-    width: 40%;
-    margin: 2em auto 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 2em auto 1rem;
+    padding: .5em;
+    border: .3em solid rgb(0, 212, 255);
+    border-radius: .5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    background-color: hsla(0, 0%, 94.1%, .8);
+    box-shadow: 0 0 1em 0 #000;
     text-align: center;
 }
 
@@ -24,9 +32,7 @@ form.login, form.register {
     flex: 0 1 100%;
     border: 1px solid;
     padding: 0.3em;
-    border-left: 0.3em solid green;
-    border-top-right-radius: 0.3em;
-    border-bottom-right-radius: 0.3em;
+    border-radius: 0.3em;
 }
 
 .login select, .register select {
@@ -80,4 +86,17 @@ p.error {
 
 .input-error {
     border-left-color: red;
+}
+
+button {
+    background-color: #4ebced;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #e8012b;
 }
