@@ -22,8 +22,8 @@ export class HeadarComponent {
  }
 
  constructor(private router: Router, private authService: AuthService){
-  this.authService.user = {
-    username:'Bobby', 
-  } as any;
+  // this.authService.user = {
+  //   username:'Bobby', 
+  // } as any;
  }
 }

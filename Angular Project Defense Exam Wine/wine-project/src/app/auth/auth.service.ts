@@ -8,8 +8,8 @@ export class AuthService {
   user: IUser| null = null;
 
   get isLoggedIn(){
-    // return this.user !== null;
-    return true;
+    return this.user !== null;
+    // return true;
   }
   constructor() { }
 }
