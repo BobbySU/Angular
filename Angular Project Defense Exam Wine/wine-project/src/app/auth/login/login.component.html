@@ -1,32 +1,38 @@
 <!-- <body> -->
 <div class="container">
-    <form class="login" action="" method="post">
+    <form #form="ngForm" class="login" >
 
         <fieldset>
             <h2>Login Form</h2>
 
             <p class="field field-icon">
-                <input class="input-error" type="username" name="username" id="username" placeholder="Username">
+                <input #emailInput="ngModel" class="input-error" type="email" ngModel required [appEmail]="appEmailDomains" 
+                name="email" id="email" placeholder="Email">
             </p>
-            <p class="error">
-                Username is required!
+            <ng-container *ngIf="emailInput.touched">
+            <p class="error" *ngIf="emailInput.errors?.['required']">
+                Email is required!
             </p>
-            <!-- <p class="error">
+            <p class="error" *ngIf="emailInput.errors?.['appEmailValidator']">
                 Email is not valid!
-            </p> -->
+            </p>
+            </ng-container>
 
             <p class="field field-icon">
               
-                <input type="password" name="password" id="password" placeholder="******">
+                <input #passwordInput="ngModel" type="password" ngModel required name="password" id="password" placeholder="******"
+                [minlength]="8">
             </p>
-            <!-- <p class="error">
+            <ng-container *ngIf="passwordInput.touched">
+            <p class="error" *ngIf="passwordInput.errors?.['required']">
                 Password is required!
             </p>
-            <p class="error">
-                Password must be at least 4 characters!
-            </p> -->
+            <p class="error" *ngIf="passwordInput.errors?.['minlength']">
+                Password must be at least 8 characters!
+            </p>
+            </ng-container>
 
-            <button>Login</button>
+            <button [disabled]="form.invalid">Login</button>
 
             <p class="text-center">
                 Have an account?
