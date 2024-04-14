@@ -7,23 +7,27 @@
 
             <!-- username -->
             <p class="field field-icon">
-                <input #userInput="ngModel" ngModel required class="input-error" type="text" name="username" id="username" placeholder="Username">
+                <input #userInput="ngModel" ngModel required [minlength]="6" class="input-error" type="text" name="username" id="username" placeholder="Username">
             </p>
             <ng-container *ngIf="userInput.touched">
             <p class="error" *ngIf="userInput.errors?.['required']">
                 Username is required!
             </p>
+            <p class="error" *ngIf="userInput.errors?.['minlength']">
+                Password must be at least 6 characters!
+            </p>
             </ng-container>
 
             <!-- email -->
             <p class="field field-icon">
-                <input #emailInput="ngModel" ngModel required type="email" name="email" id="email" placeholder="john.doe@gmail.com">
+                <input #emailInput="ngModel" ngModel required type="email" name="email" id="email" [appEmail]="appEmailDomains" 
+                 placeholder="john.doe@gmail.com">
             </p>
             <ng-container *ngIf="emailInput.touched">
             <p class="error" *ngIf="emailInput.errors?.['required']">
                 Email is required!
             </p>
-            <p class="error">
+            <p class="error"  *ngIf="emailInput.errors?.['appEmailValidator']">
                 Email is not valid!
             </p>
             </ng-container>
@@ -56,7 +60,7 @@
             <p class="field field-icon">
                 <input #rePassInput="ngModel" ngModel type="password" name="rePassword" id="rePassword" placeholder="******">
             </p>
-            <ng-container *ngIf="rePassInput.touched">
+            <ng-container *ngIf="(rePassInput.value!==passInput.value)">
             <p class="error">Repeat Password does not match password!</p>
             </ng-container> 
 
