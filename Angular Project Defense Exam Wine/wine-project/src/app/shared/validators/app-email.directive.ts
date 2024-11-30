@@ -5,13 +5,14 @@ import { appEmailValidator } from "./app-email-validator";
 @Directive({
     selector: '[appEmail]',
     providers: [
-      {
-        provide: NG_VALIDATORS,
-        useExisting: AppEmailDirective,
-        multi: true
-      }
-    ]
-  })
+        {
+            provide: NG_VALIDATORS,
+            useExisting: AppEmailDirective,
+            multi: true
+        }
+    ],
+    standalone: false
+})
   export class AppEmailDirective implements OnChanges, Validator {
   
     @Input() appEmail: string[] = [];

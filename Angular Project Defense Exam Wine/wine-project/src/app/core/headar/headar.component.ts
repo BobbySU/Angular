@@ -4,13 +4,12 @@ import { AuthService } from '../../auth/auth.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-headar',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './headar.component.html',
-  styleUrl: './headar.component.scss'
+    selector: 'app-headar',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './headar.component.html',
+    styleUrl: './headar.component.scss'
 })
 export class HeadarComponent {
  get isLog(){
